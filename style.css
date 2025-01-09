@@ -1,0 +1,69 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Éviter les débordements */
+}
+
+/* Style de la barre latérale */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #c4c4c4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color:#010101;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: blue;
+}
+
+.sidenav ul {
+    list-style-type: none;
+}
+
+/* Bouton de fermeture */
+.sidenav .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Icône du menu burger */
+.openBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.burger-icon {
+    display: inline-block;
+}
+
+.burger-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #333;
+    transition: 0.3s;
+}
